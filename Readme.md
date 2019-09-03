@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Павел Нюкало](https://up.htmlacademy.ru/htmlcss/26/user/869225).
-* Наставник: `Неизвестно`.
+* Наставник: [Дмитрий Иовлев](https://htmlacademy.ru/profile/skywalker).
 
 ---
 
