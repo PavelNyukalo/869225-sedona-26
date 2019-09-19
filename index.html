@@ -23,7 +23,7 @@
             <a href="#">Карта штата</a>
           </li>
           <li>
-            <a href="#">Гостиницы</a>
+            <a href="catalog.html">Гостиницы</a>
           </li>
         </ul>
       </nav>
@@ -88,8 +88,25 @@
         <img src="img/map.jpg" width="1200" height="594" alt="map">
         <h2>Заинтересовались?</h2>
         <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-        <form>
-          <!--Здесь будет форма-->
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <h3>Поиск гостиницы в Седоне</h3>
+          <p>
+            <label for="date-of-arrival">Дата заезда:</label>
+            <input id="date-of-arrival" type="date" name="dateArrival" value="" placeholder="24 апреля 2017">
+          </p>
+          <p>
+            <label for="date-of-departure">Дата выезда:</label>
+            <input id="date-of-departure" type="date" name="dateDeparture" value="" placeholder="4 июля 2017">
+          </p>
+          <p>
+            <label for="number-of-adults">Взрослые:</label>
+            <input id="number-of-adults" type="number" name="adults" value="" placeholder="2" min="1" step="1" >
+          </p>
+          <p>
+            <label for="number-of-children">Дети:</label>
+            <input id="number-of-children" type="number" name="children" value="" placeholder="0" min="0" step="1">
+          </p>
+          <button type="submit">Найти</button>
         </form>
       </section>
     </main>
