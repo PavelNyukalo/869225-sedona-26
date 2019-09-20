@@ -88,23 +88,29 @@
         <img src="img/map.jpg" width="1200" height="594" alt="map">
         <h2>Заинтересовались?</h2>
         <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+        <button type="button">Поиск гостиницы в Седоне</button>
         <form action="https://echo.htmlacademy.ru" method="post">
-          <h3>Поиск гостиницы в Седоне</h3>
           <p>
             <label for="date-of-arrival">Дата заезда:</label>
-            <input id="date-of-arrival" type="date" name="dateArrival" value="" placeholder="24 апреля 2017">
+            <input id="date-of-arrival" type="text" name="dateArrival" value="" placeholder="24 апреля 2017">
+            <button type="button" aria-label="calendar"></button>
           </p>
           <p>
             <label for="date-of-departure">Дата выезда:</label>
-            <input id="date-of-departure" type="date" name="dateDeparture" value="" placeholder="4 июля 2017">
+            <input id="date-of-departure" type="text" name="dateDeparture" value="" placeholder="4 июля 2017">
+            <button type="button" aria-label="calendar"></button>
           </p>
           <p>
             <label for="number-of-adults">Взрослые:</label>
+            <button type="button" aria-label="minus"></button>
             <input id="number-of-adults" type="number" name="adults" value="" placeholder="2" min="1" step="1" >
+            <button type="button" aria-label="plus"></button>
           </p>
           <p>
             <label for="number-of-children">Дети:</label>
+            <button type="button" aria-label="minus"></button>
             <input id="number-of-children" type="number" name="children" value="" placeholder="0" min="0" step="1">
+            <button type="button" aria-label="plus"></button>
           </p>
           <button type="submit">Найти</button>
         </form>
@@ -115,18 +121,18 @@
       <div>
         <ul>
           <li>
-            <a href="#">Twitter</a>
+            <a href="#" aria-label="twitter"></a>
           </li>
           <li>
-            <a href="#">Facebook</a>
+            <a href="#" aria-label="facebook"></a>
           </li>
           <li>
-            <a href="#">YouTube</a>
+            <a href="#" aria-label="youtube"></a>
           </li>
         </ul>
       </div>
       <p>
-        Website by <a href="https://htmlacademy.ru/">htmlAcademy</a>
+        Website by <a href="https://htmlacademy.ru/" aria-label="htmlacademy"></a>
       </p>
     </footer>
   </body>
