@@ -31,9 +31,63 @@
 
     <main>
       <section>
-        <form>
-          <!--Здесь будет форма-->
+        <form action="https://echo.htmlacademy.ru" method="get">
+          <fieldset>
+            <legend>Инфраструктура:</legend>
+            <ul>
+              <li>
+                <input id="filter-pool" type="checkbox" name="pool" checked>
+                <label for="filter-pool">Бассейн</label>
+              </li>
+              <li>
+                <input id="filter-parking" type="checkbox" name="parking">
+                <label for="filter-parking">Парковка</label>
+              </li>
+              <li>
+                <input id="filter-wi-fi" type="checkbox" name="wi-fi">
+                <label for="filter-wi-fi">Wi-Fi</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Тип жилья:</legend>
+            <ul>
+              <li>
+                <input id="filter-hotel" type="checkbox" name="hotel" checked>
+                <label for="filter-hotel">Гостиница</label>
+              </li>
+              <li>
+                <input id="filter-motel" type="checkbox" name="motel" checked>
+                <label for="filter-motel">Мотель</label>
+              </li>
+              <li>
+                <input id="filter-apartments" type="checkbox" name="apartments" checked>
+                <label for="filter-apartments">Апартаменты</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Стоимость в сутки(₽):</legend>
+            <label>
+              <input type="text" name="price-from" value="" placeholder="От 0">
+              <input type="text" name="price-to" value="" placeholder="До 3000">
+              <button type="button" aria-label="Левый ползунок"></button>
+              <div aria-label="Диапазон"></div>
+              <button type="button" aria-label="Правый ползунок"></button>
+            </label>
+          </fieldset>
+          <button type="submit">Показать</button>
         </form>
+      </section>
+
+      <section>
+        <h2>Найдено: 3</h2>
+        <p>Сортировка:</p>
+        <button type="submit">По цене</button>
+        <button type="submit">По типу</button>
+        <button type="submit">По рейтингу</button>
+        <button type="button" aria-label="Сортировка по возрастанию"></button>
+        <button type="button" aria-label="Сортировка по убыванию"></button>
       </section>
 
       <section>
@@ -113,7 +167,7 @@
           </ul>
         </div>
         <p>
-          Website by <a href="https://htmlacademy.ru/" aria-label="htmlacademy"></a>
+          Website by <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="htmlacademy"></a>
         </p>
       </footer>
   </body>
