@@ -31,6 +31,7 @@
 
     <main>
       <section>
+        <h1 class="visually-hidden">Поиск гостинницы в Седоне</h1>
         <form action="https://echo.htmlacademy.ru" method="get">
           <fieldset>
             <legend>Инфраструктура:</legend>
@@ -68,30 +69,33 @@
           </fieldset>
           <fieldset>
             <legend>Стоимость в сутки(₽):</legend>
-            <label>
-              <input type="text" name="price-from" value="" placeholder="От 0">
-              <input type="text" name="price-to" value="" placeholder="До 3000">
-              <button type="button" aria-label="Левый ползунок"></button>
-              <div aria-label="Диапазон"></div>
-              <button type="button" aria-label="Правый ползунок"></button>
-            </label>
+            <p>
+              <label for="number-price-from">От</label>
+              <input id="number-price-from" type="number" name="price-from" value="0">
+            </p>
+            <p>
+              <label for="number-price-to">До</label>
+              <input id="number-price-to" type="number" name="price-to" value="3000">
+            </p>
+            <button type="button" aria-label="Левый ползунок"></button>
+            <div aria-label="Диапазон"></div>
+            <button type="button" aria-label="Правый ползунок"></button>
           </fieldset>
           <button type="submit">Показать</button>
         </form>
       </section>
 
       <section>
-        <h2>Найдено: 3</h2>
-        <p>Сортировка:</p>
-        <button type="submit">По цене</button>
-        <button type="submit">По типу</button>
-        <button type="submit">По рейтингу</button>
-        <button type="button" aria-label="Сортировка по возрастанию"></button>
-        <button type="button" aria-label="Сортировка по убыванию"></button>
-      </section>
-
-      <section>
         <h2 class="visually-hidden">Гостиницы Седоны</h2>
+        <div>
+          <p>Найдено: 3</p>
+          <p>Сортировка:</p>
+          <a href="#">По цене</a>
+          <a href="#">По типу</a>
+          <a href="#">По рейтингу</a>
+          <a href="#" aria-label="Сортировка по возрастанию"></a>
+          <a href="#" aria-label="Сортировка по убыванию"></a>
+        </div>
         <ul>
           <li>
             <h3>
