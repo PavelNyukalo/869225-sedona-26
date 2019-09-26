@@ -3,16 +3,19 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
 
   <body>
 
-    <header>
-      <nav>
-        <a>
+    <header class="main-header">
+      <nav class="main-navigation">
+        <a class="main-header-logo">
           <img src="img/logo-sedona.svg" width="140" height="72" alt="CityOfSedona"">
         </a>
-        <ul>
+        <ul class="site-navigation">
           <li>
             <a href="#">Информация</a>
           </li>
@@ -30,10 +33,12 @@
     </header>
 
     <main>
-      <section>
+      <section class="description">
         <img src="img/intro-welcome.svg" width="459" height="353" alt="Sedona">
-        <h1>Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
-        <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+        <div>
+          <h1>Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
+          <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+        </div>
       </section>
 
       <section>
@@ -84,54 +89,55 @@
         </ol>
       </section>
 
-      <section>
+      <section class="search">
         <img src="img/map.jpg" width="1200" height="594" alt="map">
         <h2>Заинтересовались?</h2>
-        <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-        <button type="button">Поиск гостиницы в Седоне</button>
-        <form action="https://echo.htmlacademy.ru" method="post">
+        <p class="explanation">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
+        <button class="button button-popup" type="button">Поиск гостиницы в Седоне</button>
+        <form class="search-for-hotels" action="https://echo.htmlacademy.ru" method="post">
           <p>
             <label for="date-of-arrival">Дата заезда:</label>
-            <input id="date-of-arrival" type="text" name="dateArrival" value="" placeholder="24 апреля 2017">
-            <button type="button" aria-label="Выбрать дату"></button>
+            <input id="date-of-arrival" type="text" name="dateArrival" value="24 апреля 2017" placeholder="24 апреля 2017">
+            <button class="calendar" type="button" aria-label="Выбрать дату"></button>
           </p>
           <p>
             <label for="date-of-departure">Дата выезда:</label>
-            <input id="date-of-departure" type="text" name="dateDeparture" value="" placeholder="4 июля 2017">
-            <button type="button" aria-label="Выбрать дату"></button>
+            <input id="date-of-departure" type="text" name="dateDeparture" value="4 июля 2017" placeholder="4 июля 2017">
+            <button class="calendar" type="button" aria-label="Выбрать дату"></button>
           </p>
           <p>
             <label for="number-of-adults">Взрослые:</label>
-            <button type="button" aria-label="Убавить"></button>
-            <input id="number-of-adults" type="number" name="adults" value="" placeholder="2" min="1" step="1" >
-            <button type="button" aria-label="Добавить"></button>
+            <button class="signs" type="button" aria-label="Убавить"></button>
+            <input id="number-of-adults" type="number" name="adults" value="2" placeholder="2" min="1" step="1" >
+            <button class="signs" type="button" aria-label="Добавить"></button>
           </p>
           <p>
             <label for="number-of-children">Дети:</label>
-            <button type="button" aria-label="Убавить"></button>
-            <input id="number-of-children" type="number" name="children" value="" placeholder="0" min="0" step="1">
-            <button type="button" aria-label="Добавить"></button>
+            <button class="signs" type="button" aria-label="Убавить"></button>
+            <input id="number-of-children" type="number" name="children" value="0" placeholder="0" min="0" step="1">
+            <button class="signs" type="button" aria-label="Добавить"></button>
           </p>
-          <button type="submit">Найти</button>
+          <button class="button button-post" type="submit">Найти</button>
         </form>
       </section>
     </main>
-    <footer>
+
+    <footer class="main-footer">
       <p>#VisitSedona</p>
-      <div>
+      <div class="footer-social">
         <ul>
           <li>
-            <a href="#" aria-label="Twitter"></a>
+            <a class="social-button" href="#" aria-label="Twitter"></a>
           </li>
           <li>
-            <a href="#" aria-label="Facebook"></a>
+            <a class="social-button" href="#" aria-label="Facebook"></a>
           </li>
           <li>
-            <a href="#" aria-label="Youtube"></a>
+            <a class="social-button" href="#" aria-label="Youtube"></a>
           </li>
         </ul>
       </div>
-      <p>
+      <p class="footer-copyright">
         Website by <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Htmlacademy"></a>
       </p>
     </footer>

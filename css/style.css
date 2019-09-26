@@ -1,0 +1,267 @@
+body {
+  width: 1200px;
+  height: 2762px;
+  margin: 0;
+  padding: 0;
+
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  background-color: #f2f2f2;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-navigation {
+  line-height: 26px;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+.site-navigation a {
+  color: #000000;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+  color: #81b3d2;
+}
+
+.site-navigation a:active {
+  color: #000000;
+  opacity: 0.3;
+}
+
+.description {
+  text-align: center;
+
+  background-color: #0b2c0b;
+  background-image: url("../img/background-photo.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.description div {
+  background-color: #ffffff
+}
+
+.description h1,
+.hotels .captions {
+  font-size: 21px;
+  line-height: 26px;
+  color: #000000;
+}
+
+.description p {
+  font-weight: normal;
+  line-height: 26px;
+  color: #333333;
+}
+
+.search,
+.catalog {
+  background-color: #ffffff
+}
+
+.search h2 {
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  color: #000000;
+}
+
+.search .explanation {
+  font-weight: normal;
+  line-height: 26px;
+  text-align: center;
+  color: #333333;
+}
+
+.button {
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+}
+
+.button-popup,
+.button-post {
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 26px;
+  color: #ffffff;
+
+  border: none;
+}
+
+.button-popup,
+.hotels .booking {
+  background-color: #766357;
+}
+
+.button-post,
+.hotels .detailed {
+  background-color: #81b3d2;
+}
+
+.button-popup:hover,
+.button-popup:focus,
+.hotels .booking:hover,
+.hotels .booking:focus {
+  background-color: #604e43;
+}
+
+.button-popup:active,
+.hotels .booking:active {
+  color:rgba(255, 255, 255, 0.3);
+
+  background-color: #503e33;
+}
+
+.button-post:hover,
+.button-post:focus,
+.hotels .detailed:hover,
+.hotels .detailed:focus {
+  background-color: #669ec0
+}
+
+.button-post:active,
+.hotels .detailed:active {
+  color:rgba(255, 255, 255, 0.3);
+
+  background-color: #5496bd;
+}
+
+.search-for-hotels input {
+  font: inherit;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #000000;
+
+  background-color: #f2f2f2;
+  border: none;
+}
+
+.search-for-hotels input:hover {
+  background-color: #ebebeb;
+}
+
+.search-for-hotels input:focus {
+  background-color: #ffffff;
+  border: 2px solid #e5e5e5;
+}
+
+.search-for-hotels .calendar {
+  color: #cacaca;
+
+  border: none;
+}
+
+.search-for-hotels .signs {
+  color: #bdbbbc;
+
+  border: none;
+}
+
+.search-for-hotels .calendar:hover,
+.search-for-hotels .calendar:focus,
+.search-for-hotels .signs:hover,
+.search-for-hotels .signs:focus {
+  color: #000000;
+}
+
+.search-for-hotels .calendar:active,
+.search-for-hotels .signs:active {
+  color: #81b3d2;
+}
+
+.main-footer {
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+.footer-social {
+  text-align: center;
+}
+
+.footer-social ul {
+  list-style: none;
+}
+
+.social-button {
+  color: #ffffff;
+  background-color: #81b3d2;
+}
+
+.footer-copyright {
+  text-align: center;
+}
+
+.footer-copyright a {
+  color: #231f20;
+}
+
+.social-button:hover,
+.social-button:focus {
+  background-color: #5496bd;
+}
+
+.social-button:active {
+  color: rgba(255, 255, 255, 0.3);
+
+  background-color: #5496bd;
+}
+
+.footer-copyright a:hover,
+.footer-copyright a:focus,
+.hotels .captions:hover,
+.hotels .captions:focus {
+  color: #81b3d2;
+}
+
+.footer-copyright a:active {
+  color: #bdbbbc;
+}
+
+.hotels .captions:active {
+  color:rgba(0, 0, 0, 0.3);
+}
+
+.current {
+  color: #766357;
+}
+
+.hotels {
+  list-style: none;
+}
+
+.hotels .clarification {
+  font-weight: normal;
+  line-height: 21px;
+  text-align: left;
+  color: #333333;
+}
+
+.hotels .detailed,
+.hotels .booking {
+  line-height: 21px;
+  color: #ffffff;
+}
+
+.hotels .rating {
+  font-weight: normal;
+  line-height: 21px;
+  text-align: center;
+  color: #666666;
+
+  background-color: #f2f2f2;
+}
