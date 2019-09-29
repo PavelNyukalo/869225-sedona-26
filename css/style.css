@@ -1,13 +1,14 @@
 body {
-  width: 1200px;
-  height: 2762px;
+  min-width: 1200px;
   margin: 0;
   padding: 0;
 
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
-  font-weight: 700;
+  line-height: 21px;
+  font-weight: normal;
   text-transform: uppercase;
+  color: #333333;
 
   background-color: #f2f2f2;
 }
@@ -18,12 +19,15 @@ a {
 
 .main-navigation {
   line-height: 26px;
+  font-weight: bold;
   color: #000000;
 
   background-color: #ffffff;
 }
 
-.site-navigation {
+.site-navigation,
+.footer-social ul,
+.hotels {
   list-style: none;
 }
 
@@ -58,13 +62,12 @@ a {
 .hotels .captions {
   font-size: 21px;
   line-height: 26px;
+  font-weight: bold;
   color: #000000;
 }
 
 .description p {
-  font-weight: normal;
   line-height: 26px;
-  color: #333333;
 }
 
 .search,
@@ -76,14 +79,13 @@ a {
   font-size: 30px;
   line-height: 36px;
   text-align: center;
+  font-weight: bold;
   color: #000000;
 }
 
 .search .explanation {
-  font-weight: normal;
   line-height: 26px;
   text-align: center;
-  color: #333333;
 }
 
 .button {
@@ -103,24 +105,24 @@ a {
 }
 
 .button-popup,
-.hotels .booking {
+.price-booking a {
   background-color: #766357;
 }
 
 .button-post,
-.hotels .detailed {
+.type-clarification a {
   background-color: #81b3d2;
 }
 
 .button-popup:hover,
 .button-popup:focus,
-.hotels .booking:hover,
-.hotels .booking:focus {
+.price-booking a:hover,
+.price-booking a:focus {
   background-color: #604e43;
 }
 
 .button-popup:active,
-.hotels .booking:active {
+.price-booking a:active {
   color:rgba(255, 255, 255, 0.3);
 
   background-color: #503e33;
@@ -128,21 +130,23 @@ a {
 
 .button-post:hover,
 .button-post:focus,
-.hotels .detailed:hover,
-.hotels .detailed:focus {
+.type-clarification a:hover,
+.type-clarification a:focus {
   background-color: #669ec0
 }
 
 .button-post:active,
-.hotels .detailed:active {
+.type-clarification a:active {
   color:rgba(255, 255, 255, 0.3);
 
   background-color: #5496bd;
 }
 
+.search-for-hotels label,
 .search-for-hotels input {
-  font: inherit;
+  font-size: 14px;
   line-height: 26px;
+  font-weight: bold;
   text-transform: uppercase;
   color: #000000;
 
@@ -189,12 +193,13 @@ a {
   background-color: #ffffff;
 }
 
-.footer-social {
-  text-align: center;
+.footer-contacts,
+.catalog .found {
+  font-weight: bold;
 }
 
-.footer-social ul {
-  list-style: none;
+.footer-social {
+  text-align: center;
 }
 
 .social-button {
@@ -240,26 +245,17 @@ a {
   color: #766357;
 }
 
-.hotels {
-  list-style: none;
-}
-
-.hotels .clarification {
-  font-weight: normal;
-  line-height: 21px;
+.type-clarification p,
+.price-booking p {
   text-align: left;
-  color: #333333;
 }
 
-.hotels .detailed,
-.hotels .booking {
-  line-height: 21px;
+.type-clarification a,
+.price-booking a {
   color: #ffffff;
 }
 
 .hotels .rating {
-  font-weight: normal;
-  line-height: 21px;
   text-align: center;
   color: #666666;
 
