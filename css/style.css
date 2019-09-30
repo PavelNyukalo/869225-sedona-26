@@ -105,24 +105,24 @@ a {
 }
 
 .button-popup,
-.price-booking a {
+.hotel-button-brown {
   background-color: #766357;
 }
 
 .button-post,
-.type-clarification a {
+.hotel-button-blue {
   background-color: #81b3d2;
 }
 
 .button-popup:hover,
 .button-popup:focus,
-.price-booking a:hover,
-.price-booking a:focus {
+.hotel-button-brown:hover,
+.hotel-button-brown:focus {
   background-color: #604e43;
 }
 
 .button-popup:active,
-.price-booking a:active {
+.hotel-button-brown:active {
   color:rgba(255, 255, 255, 0.3);
 
   background-color: #503e33;
@@ -130,13 +130,13 @@ a {
 
 .button-post:hover,
 .button-post:focus,
-.type-clarification a:hover,
-.type-clarification a:focus {
+.hotel-button-blue:hover,
+.hotel-button-blue:focus {
   background-color: #669ec0
 }
 
 .button-post:active,
-.type-clarification a:active {
+.hotel-button-blue:active {
   color:rgba(255, 255, 255, 0.3);
 
   background-color: #5496bd;
@@ -149,7 +149,9 @@ a {
   font-weight: bold;
   text-transform: uppercase;
   color: #000000;
+}
 
+.search-for-hotels input {
   background-color: #f2f2f2;
   border: none;
 }
@@ -245,13 +247,13 @@ a {
   color: #766357;
 }
 
-.type-clarification p,
-.price-booking p {
+.type,
+.price {
   text-align: left;
 }
 
-.type-clarification a,
-.price-booking a {
+.hotel-button {
+  font-weight: bold;
   color: #ffffff;
 }
 
@@ -261,3 +263,5 @@ a {
 
   background-color: #f2f2f2;
 }
+
+
