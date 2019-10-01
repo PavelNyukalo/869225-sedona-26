@@ -33,12 +33,12 @@
     </header>
 
     <main>
-      <section>
+      <section class="advacned-settings">
         <h1 class="visually-hidden">Поиск гостинницы в Седоне</h1>
         <form action="https://echo.htmlacademy.ru" method="get">
           <fieldset>
             <legend>Инфраструктура:</legend>
-            <ul>
+            <ul class="infrastructure">
               <li>
                 <input id="filter-pool" type="checkbox" name="pool" checked>
                 <label for="filter-pool">Бассейн</label>
@@ -53,9 +53,9 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset>
+          <fieldset >
             <legend>Тип жилья:</legend>
-            <ul>
+            <ul class="housing">
               <li>
                 <input id="filter-hotel" type="checkbox" name="hotel" checked>
                 <label for="filter-hotel">Гостиница</label>
@@ -74,17 +74,17 @@
             <legend>Стоимость в сутки(₽):</legend>
             <p>
               <label for="number-price-from">От</label>
-              <input id="number-price-from" type="number" name="price-from" value="0">
+              <input id="number-price-from" type="text" name="price-from" value="0">
             </p>
             <p>
               <label for="number-price-to">До</label>
-              <input id="number-price-to" type="number" name="price-to" value="3000">
+              <input id="number-price-to" type="text" name="price-to" value="3000">
             </p>
             <button type="button" aria-label="Левый ползунок"></button>
             <div aria-label="Диапазон"></div>
             <button type="button" aria-label="Правый ползунок"></button>
           </fieldset>
-          <button type="submit">Показать</button>
+          <button class="button-show" type="submit">Показать</button>
         </form>
       </section>
 
@@ -92,12 +92,12 @@
         <h2 class="visually-hidden">Гостиницы Седоны</h2>
         <div>
           <p class="found">Найдено: 3</p>
-          <p>Сортировка:</p>
-          <a href="#">По цене</a>
-          <a href="#">По типу</a>
-          <a href="#">По рейтингу</a>
-          <a href="#" aria-label="Сортировка по возрастанию"></a>
-          <a href="#" aria-label="Сортировка по убыванию"></a>
+          <p class="sort">Сортировка:</p>
+          <a class="button-sort button-current" href="#">По цене</a>
+          <a class="button-sort" href="#">По типу</a>
+          <a class="button-sort" href="#">По рейтингу</a>
+          <a class="button-up" href="#" aria-label="Сортировка по возрастанию"></a>
+          <a class="button-down button-current" href="#" aria-label="Сортировка по убыванию"></a>
         </div>
         <ul class="hotels">
           <li>

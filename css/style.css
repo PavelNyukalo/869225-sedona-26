@@ -70,6 +70,45 @@ a {
   line-height: 26px;
 }
 
+.reasons-list {
+  list-style: none;
+  text-align: center;
+}
+
+.reasons h2 {
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.reasons-list li:first-of-type,
+.reasons-list li:nth-child(2) {
+  color: #ffffff;
+
+  background-color: #81b3d2;
+}
+
+.reasons-list li:nth-child(3),
+.reasons-list li:nth-child(4),
+.reasons-list li:nth-child(5) {
+  background-color: #eeeeee;
+}
+
+.features li:nth-of-type(1),
+.features li:nth-of-type(2),
+.features li:nth-of-type(3) {
+  text-align: center;
+  color: #333333;
+
+  list-style: none;
+  background-color: #ffffff;
+}
+
+.features h3 {
+  font-size: 21px;
+  font-weight: bold;
+  color: #000000;
+}
+
 .search,
 .catalog {
   background-color: #ffffff
@@ -195,8 +234,7 @@ a {
   background-color: #ffffff;
 }
 
-.footer-contacts,
-.catalog .found {
+.footer-contacts {
   font-weight: bold;
 }
 
@@ -247,6 +285,123 @@ a {
   color: #766357;
 }
 
+.advacned-settings {
+  color: #ffffff;
+
+  background-color: #604e43;
+  background-image: url("../img/filter-background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.advacned-settings fieldset {
+  border: none;
+}
+
+.advacned-settings legend {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.infrastructure,
+.housing {
+  list-style: none;
+}
+
+.infrastructure:disabled + label,
+.housing:disabled + label {
+  color: #6a6a6a;
+}
+
+.advacned-settings input {
+  color: #ffffff;
+
+  background: none;
+  border: none;
+}
+
+.button-show {
+  font-size: 14px;
+  line-height: 21px;
+  color: #ffffff;
+
+  background: none;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+}
+
+.button-show:hover,
+.button-show:focus {
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+.found {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.sort,
+.button-sort {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.sort {
+  color: #000000;
+}
+
+.button-sort {
+  color: #000000;
+
+  opacity: 0.3;
+  border-bottom: 1px dotted #81b3d2;
+}
+
+.button-current {
+  color: #81b3d2;
+
+  opacity: 1;
+  border: none;
+}
+
+.button-sort:hover,
+.button-sort:focus {
+  color: #81b3d2;
+}
+
+.button-sort:active {
+  color: #000000;
+
+  opacity: 1;
+  border: none;
+}
+
+.button-current:hover,
+.button-current:focus {
+  border: none;
+}
+
+.button-up,
+.button-down {
+  color: #cacaca;
+}
+
+.button-up:hover,
+.button-up:focus,
+.button-down:hover,
+.button-down:focus {
+  color: #000000;
+}
+
+.button-up:active,
+.button-down:active {
+  color: #81b3d2;
+}
+
 .type,
 .price {
   text-align: left;
@@ -263,5 +418,7 @@ a {
 
   background-color: #f2f2f2;
 }
+
+
 
 
