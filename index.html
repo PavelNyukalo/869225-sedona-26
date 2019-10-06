@@ -34,9 +34,14 @@
 
     <main>
       <section class="description">
-        <img src="img/intro-welcome.svg" width="459" height="353" alt="Sedona">
-        <div>
-          <h1>Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</h1>
+        <div class="image">
+          <article class="image-items">
+            <img src="img/intro-welcome.svg" width="459" height="353" alt="Sedona">
+          </article>
+        </div>
+        <div class="polygon" aria-label="декоративный полигон"></div>
+        <div class="sedona">
+          <h1>Седона &#8212; небольшой городок в Аризоне,<br> <span>заслуживающий большего!</span></h1>
           <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
         </div>
       </section>
@@ -44,10 +49,10 @@
       <section class="reasons">
         <ol class="reasons-list">
           <li>
-            <img src="img/feature-picture-1.jpg" width="800" height="400" alt="feature-picture">
             <h2>Настоящий городок</h2>
             <span>-№1-</span>
             <p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
+            <img src="img/feature-picture-1.jpg" width="800" height="400" alt="feature-picture">
 
             <ul class="features">
               <li class="features-item">
@@ -90,56 +95,67 @@
       </section>
 
       <section class="search">
-        <img src="img/map.jpg" width="1200" height="594" alt="map">
-        <h2>Заинтересовались?</h2>
-        <p class="explanation">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
-        <button class="button button-popup" type="button">Поиск гостиницы в Седоне</button>
-        <form class="search-for-hotels" action="https://echo.htmlacademy.ru" method="post">
-          <p>
-            <label for="date-of-arrival">Дата заезда:</label>
-            <input id="date-of-arrival" type="text" name="dateArrival" value="24 апреля 2017" placeholder="24 апреля 2017">
-            <button class="calendar" type="button" aria-label="Выбрать дату"></button>
-          </p>
-          <p>
-            <label for="date-of-departure">Дата выезда:</label>
-            <input id="date-of-departure" type="text" name="dateDeparture" value="4 июля 2017" placeholder="4 июля 2017">
-            <button class="calendar" type="button" aria-label="Выбрать дату"></button>
-          </p>
-          <p>
-            <label for="number-of-adults">Взрослые:</label>
-            <button class="signs" type="button" aria-label="Убавить"></button>
-            <input id="number-of-adults" type="number" name="adults" value="2" placeholder="2" min="1" step="1" >
-            <button class="signs" type="button" aria-label="Добавить"></button>
-          </p>
-          <p>
-            <label for="number-of-children">Дети:</label>
-            <button class="signs" type="button" aria-label="Убавить"></button>
-            <input id="number-of-children" type="number" name="children" value="0" placeholder="0" min="0" step="1">
-            <button class="signs" type="button" aria-label="Добавить"></button>
-          </p>
-          <button class="button button-post" type="submit">Найти</button>
-        </form>
+        <img class="maps" src="img/map.jpg" width="1200" height="600" alt="map">
+        <div class="container">
+          <div class="question">
+            <h2>Заинтересовались?</h2>
+            <p class="explanation">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
+          </div>
+          <button class="button button-popup" type="button">Поиск гостиницы в Седоне</button>
+        </div>
+        <div class="search-for-hotels">
+          <form class="form-search-for-hotels" action="https://echo.htmlacademy.ru" method="post">
+            <p>
+              <label for="date-of-arrival">Дата заезда:</label>
+              <input id="date-of-arrival" type="text" name="dateArrival" value="24 апреля 2017" placeholder="24 апреля 2017">
+              <button class="calendar" type="button" aria-label="Выбрать дату"></button>
+            </p>
+            <p>
+              <label for="date-of-departure">Дата выезда:</label>
+              <input id="date-of-departure" type="text" name="dateDeparture" value="4 июля 2017" placeholder="4 июля 2017">
+              <button class="calendar" type="button" aria-label="Выбрать дату"></button>
+            </p>
+            <p>
+              <label for="number-of-adults">Взрослые:</label>
+              <button class="signs" type="button" aria-label="Убавить"></button>
+              <input id="number-of-adults" type="number" name="adults" value="2" placeholder="2" min="1" step="1" >
+              <button class="signs" type="button" aria-label="Добавить"></button>
+            </p>
+            <p>
+              <label for="number-of-children">Дети:</label>
+              <button class="signs" type="button" aria-label="Убавить"></button>
+              <input id="number-of-children" type="number" name="children" value="0" placeholder="0" min="0" step="1">
+              <button class="signs" type="button" aria-label="Добавить"></button>
+            </p>
+            <button class="button button-post" type="submit">Найти</button>
+          </form>
+        </div>
+
       </section>
     </main>
 
     <footer class="main-footer">
-      <p class="footer-contacts">#VisitSedona</p>
+      <div class="footer-contacts">
+        <p class="footer-contacts-items">#VisitSedona</p>
+      </div>
       <div class="footer-social">
-        <ul>
-          <li>
-            <a class="social-button" href="#" aria-label="Twitter"></a>
+        <ul class="social-button">
+          <li class="social-button-items">
+            <a href="#" aria-label="Twitter"></a>
           </li>
-          <li>
-            <a class="social-button" href="#" aria-label="Facebook"></a>
+          <li class="social-button-items">
+            <a href="#" aria-label="Facebook"></a>
           </li>
-          <li>
-            <a class="social-button" href="#" aria-label="Youtube"></a>
+          <li class="social-button-items">
+            <a href="#" aria-label="Youtube"></a>
           </li>
         </ul>
       </div>
-      <p class="footer-copyright">
-        Website by <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Htmlacademy"></a>
-      </p>
+      <div class="footer-copyright">
+        <p class="footer-copyright-items">
+          Website by <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Htmlacademy"></a>
+        </p>
+      </div>
     </footer>
   </body>
 </html>
