@@ -27,9 +27,7 @@
             <li>
               <a href="#">Карта штата</a>
             </li>
-            <li class="current">
-              Гостиницы
-            </li>
+            <li class="current">Гостиницы</li>
           </ul>
         </nav>
       </header>
@@ -38,61 +36,71 @@
         <section class="advacned-settings">
           <h1 class="visually-hidden">Поиск гостинницы в Седоне</h1>
           <form action="https://echo.htmlacademy.ru" method="get">
-            <fieldset>
-              <legend>Инфраструктура:</legend>
-              <ul class="infrastructure">
-                <li>
-                  <input id="filter-pool" type="checkbox" name="pool" checked>
-                  <label for="filter-pool">Бассейн</label>
-                </li>
-                <li>
-                  <input id="filter-parking" type="checkbox" name="parking">
-                  <label for="filter-parking">Парковка</label>
-                </li>
-                <li>
-                  <input id="filter-wi-fi" type="checkbox" name="wi-fi">
-                  <label for="filter-wi-fi">Wi-Fi</label>
-                </li>
-              </ul>
-            </fieldset>
-            <fieldset >
-              <legend>Тип жилья:</legend>
-              <ul class="housing">
-                <li>
-                  <input id="filter-hotel" type="checkbox" name="hotel" checked>
-                  <label for="filter-hotel">Гостиница</label>
-                </li>
-                <li>
-                  <input id="filter-motel" type="checkbox" name="motel" checked>
-                  <label for="filter-motel">Мотель</label>
-                </li>
-                <li>
-                  <input id="filter-apartments" type="checkbox" name="apartments" checked>
-                  <label for="filter-apartments">Апартаменты</label>
-                </li>
-              </ul>
-            </fieldset>
-            <fieldset>
-              <legend>Стоимость в сутки(₽):</legend>
-              <p>
-                <label for="number-price-from">От</label>
-                <input id="number-price-from" type="text" name="price-from" value="0">
-              </p>
-              <p>
-                <label for="number-price-to">До</label>
-                <input id="number-price-to" type="text" name="price-to" value="3000">
-              </p>
-              <button type="button" aria-label="Левый ползунок"></button>
-              <div aria-label="Диапазон"></div>
-              <button type="button" aria-label="Правый ползунок"></button>
-            </fieldset>
-            <button class="button-show" type="submit">Показать</button>
+
+            <div class="infrastructure-container">
+              <fieldset>
+                <legend>Инфраструктура:</legend>
+                <ul class="infrastructure">
+                  <li>
+                    <input id="filter-pool" type="checkbox" name="pool" checked>
+                    <label for="filter-pool">Бассейн</label>
+                  </li>
+                  <li>
+                    <input id="filter-parking" type="checkbox" name="parking">
+                    <label for="filter-parking">Парковка</label>
+                  </li>
+                  <li>
+                    <input id="filter-wi-fi" type="checkbox" name="wi-fi">
+                    <label for="filter-wi-fi">Wi-Fi</label>
+                  </li>
+                </ul>
+              </fieldset>
+            </div>
+
+            <div class="housing-container">
+              <fieldset>
+                <legend>Тип жилья:</legend>
+                <ul class="housing">
+                  <li>
+                    <input id="filter-hotel" type="checkbox" name="hotel" checked>
+                    <label for="filter-hotel">Гостиница</label>
+                  </li>
+                  <li>
+                    <input id="filter-motel" type="checkbox" name="motel" checked>
+                    <label for="filter-motel">Мотель</label>
+                  </li>
+                  <li>
+                    <input id="filter-apartments" type="checkbox" name="apartments" checked>
+                    <label for="filter-apartments">Апартаменты</label>
+                  </li>
+                </ul>
+              </fieldset>
+            </div>
+
+            <div class="filter-range">
+              <fieldset>
+                <legend>Стоимость в сутки(₽):</legend>
+                <p>
+                  <label for="number-price-from">От</label>
+                  <input id="number-price-from" type="text" name="price-from" value="0">
+                </p>
+                <p>
+                  <label for="number-price-to">До</label>
+                  <input id="number-price-to" type="text" name="price-to" value="3000">
+                </p>
+                <button type="button" aria-label="Левый ползунок"></button>
+                <div aria-label="Диапазон"></div>
+                <button type="button" aria-label="Правый ползунок"></button>
+                <button class="button-show" type="submit">Показать</button>
+              </fieldset>
+            </div>
+
           </form>
         </section>
 
         <section class="catalog">
           <h2 class="visually-hidden">Гостиницы Седоны</h2>
-          <div>
+          <div class="sort-container">
             <p class="found">Найдено: 3</p>
             <p class="sort">Сортировка:</p>
             <a class="button-sort button-current" href="#">По цене</a>
