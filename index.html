@@ -15,7 +15,7 @@
       <header class="main-header">
         <nav class="main-navigation">
           <a class="main-header-logo">
-            <img src="img/logo-sedona.svg" width="140" height="72" alt="CityOfSedona"">
+            <img src="img/logo-sedona.svg" width="140" height="72" alt="CityOfSedona">
           </a>
           <ul class="site-navigation">
             <li>
@@ -48,31 +48,32 @@
         </section>
 
         <section class="reasons">
+          <h2 class="visually-hidden">Преимущества Седоны</h2>
           <ol class="reasons-list">
             <li>
-              <div class="number-one">
-                <h2>Настоящий<br>городок</h2>
+              <div class="city">
+                <h3 class="total">Настоящий<br>городок</h3>
                 <span>— №1 —</span>
-                <p>Седона — не аттракцион для туристов,<br>там течёт своя жизнь</p>
+                <p class="general">Седона — не аттракцион для туристов,<br>там течёт своя жизнь</p>
               </div>
               <img src="img/feature-picture-1.jpg" width="800" height="256" alt="feature-picture">
 
               <ul class="features">
                 <li>
-                  <div class="features-item-one">
-                    <h3>Жильё</h3>
+                  <div class="features-item-house">
+                    <h4 class="total total-black">Жильё</h4>
                     <p>Рекомендуем пожить в настоящем<br>мотеле, всё как в кино!</p>
                   </div>
                 </li>
                 <li>
-                  <div class="features-item-two">
-                    <h3>Еда</h3>
+                  <div class="features-item-food">
+                    <h4 class="total total-black">Еда</h4>
                     <p>Всегда заказывайте фирменный бургер,<br> Вы не разочаруетесь!</p>
                   </div>
                 </li>
                 <li>
-                  <div class="features-item-three">
-                    <h3>Сувениры</h3>
+                  <div class="features-item-gift">
+                    <h4 class="total total-black">Сувениры</h4>
                     <p>Не только китайского, но и местного производства!</p>
                   </div>
                 </li>
@@ -81,31 +82,31 @@
             </li>
             <li>
               <img src="img/feature-picture-2.jpg" width="800" height="256" alt="layer-5">
-              <div class="number-two">
-                <h2>Там есть<br>мост дьявола</h2>
+              <div class="bridge">
+                <h3 class="total">Там есть<br>мост дьявола</h3>
                 <span>— №2 —</span>
-                <p>Да, по нему можно пройти! Если конечно<br>Вы осмелитесь</p>
+                <p class="general">Да, по нему можно пройти! Если конечно<br>Вы осмелитесь</p>
               </div>
             </li>
             <li>
-              <div class="number-three">
-                <h2>Небольшая<br>площадь</h2>
+              <div class="square">
+                <h3 class="total total-black">Небольшая<br>площадь</h3>
                 <span>— №3 —</span>
-                <p>Все достопримечательности<br>находятся очень близко</p>
+                <p class="general">Все достопримечательности<br>находятся очень близко</p>
               </div>
             </li>
             <li>
-              <div class="number-four">
-                <h2>Красивая<br>дорога</h2>
+              <div class="road">
+                <h3 class="total total-black">Красивая<br>дорога</h3>
                 <span>— №4 —</span>
-                <p>Ехать в Седону из Лас-Вегаса совсем<br>не скучно!</p>
+                <p class="general">Ехать в Седону из Лас-Вегаса совсем<br>не скучно!</p>
               </div>
             </li>
             <li>
-              <div class="number-five">
-                <h2>Мало<br>туристов</h2>
+              <div class="visitor">
+                <h3 class="total total-black">Мало<br>туристов</h3>
                 <span>— №5 —</span>
-                <p>Большинство едет в Гранд Каньон<br>и толпится там</p>
+                <p class="general">Большинство едет в Гранд Каньон<br>и толпится там</p>
               </div>
             </li>
           </ol>
@@ -115,40 +116,43 @@
           <div class="container">
             <h2>Заинтересовались?</h2>
             <p class="explanation">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
-            <button class="button button-popup" type="button">Поиск гостиницы в Седоне</button>
+            <div class="search-container">
+              <button class="button button-popup" type="button">Поиск гостиницы в Седоне</button>
 
-            <div class="search-for-hotels">
-              <form class="form-search-for-hotels" action="https://echo.htmlacademy.ru" method="post">
-                <p>
-                  <label for="date-of-arrival">Дата заезда:</label>
-                  <input id="date-of-arrival" type="text" name="dateArrival" value="24 апреля 2017" placeholder="24 апреля 2017">
-                  <button class="calendar" type="button" aria-label="Выбрать дату"></button>
-                </p>
-                <p>
-                  <label for="date-of-departure">Дата выезда:</label>
-                  <input id="date-of-departure" type="text" name="dateDeparture" value="4 июля 2017" placeholder="4 июля 2017">
-                  <button class="calendar" type="button" aria-label="Выбрать дату"></button>
-                </p>
-                <p>
-                  <label for="number-of-adults">Взрослые:</label>
-                  <button class="signs" type="button" aria-label="Убавить"></button>
-                  <input id="number-of-adults" type="number" name="adults" value="2" placeholder="2" min="1" step="1" >
-                  <button class="signs" type="button" aria-label="Добавить"></button>
-                </p>
-                <p>
-                  <label for="number-of-children">Дети:</label>
-                  <button class="signs" type="button" aria-label="Убавить"></button>
-                  <input id="number-of-children" type="number" name="children" value="0" placeholder="0" min="0" step="1">
-                  <button class="signs" type="button" aria-label="Добавить"></button>
-                </p>
-                <button class="button button-post" type="submit">Найти</button>
-              </form>
+              <div class="search-for-hotels">
+                <form class="form-search-for-hotels" action="https://echo.htmlacademy.ru" method="post">
+                  <p>
+                    <label for="date-of-arrival">Дата заезда:</label>
+                    <input id="date-of-arrival" type="text" name="dateArrival" value="24 апреля 2017" placeholder="24 апреля 2017">
+                    <button class="calendar" type="button" aria-label="Выбрать дату"></button>
+                  </p>
+                  <p>
+                    <label for="date-of-departure">Дата выезда:</label>
+                    <input id="date-of-departure" type="text" name="dateDeparture" value="4 июля 2017" placeholder="4 июля 2017">
+                    <button class="calendar" type="button" aria-label="Выбрать дату"></button>
+                  </p>
+                  <p>
+                    <label for="number-of-adults">Взрослые:</label>
+                    <button class="signs" type="button" aria-label="Убавить"></button>
+                    <input id="number-of-adults" type="number" name="adults" value="2" placeholder="2" min="1" step="1" >
+                    <button class="signs" type="button" aria-label="Добавить"></button>
+                  </p>
+                  <p>
+                    <label for="number-of-children">Дети:</label>
+                    <button class="signs" type="button" aria-label="Убавить"></button>
+                    <input id="number-of-children" type="number" name="children" value="0" placeholder="0" min="0" step="1">
+                    <button class="signs" type="button" aria-label="Добавить"></button>
+                  </p>
+                  <button class="button button-post" type="submit">Найти</button>
+                </form>
+              </div>
             </div>
 
           </div>
-          <div class="maps">
+        </section>
+
+        <section class="maps">
             <img src="img/map.jpg" width="1200" height="593" alt="map">
-          </div>
         </section>
       </main>
 

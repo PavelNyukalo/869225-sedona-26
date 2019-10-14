@@ -40,6 +40,7 @@ a {
 
 .main-navigation {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
 
 
@@ -117,7 +118,7 @@ a {
 .sedona p {
   width: 490px;
   padding-top: 0;
-  padding-bottom: 51px;
+  padding-bottom: 50px;
   margin-top: 0;
   margin-right: auto;
   margin-bottom: 0;
@@ -148,27 +149,22 @@ a {
   text-align: center;
 }
 
-.reasons-list h2 {
+.reasons-list .total {
   padding: 0;
   margin: 0;
 
   font-size: 21px;
   font-weight: bold;
+}
+
+.total-black {
+  color: #000000;
 }
 
 .features {
   display: flex;
   padding: 0;
   margin: 0;
-}
-
-.features h3 {
-  padding: 0;
-  margin: 0;
-
-  font-size: 21px;
-  font-weight: bold;
-  color: #000000;
 }
 
 .reasons-list span {
@@ -181,16 +177,19 @@ a {
   margin: 0;
 }
 
-.reasons-list .number-one,
-.reasons-list .number-two {
+.reasons-list li:nth-child(1),
+.reasons-list li:nth-child(2) {
+  display: flex;
+  flex-wrap: wrap;
+
   color: #ffffff;
 
   background-color: #81b3d2;
 }
 
-.reasons-list .number-three,
-.reasons-list .number-four,
-.reasons-list .number-five {
+.reasons-list li:nth-child(3),
+.reasons-list li:nth-child(4),
+.reasons-list li:nth-child(5) {
   background-color: #eeeeee;
 }
 
@@ -204,14 +203,7 @@ a {
   background-color: #ffffff;
 }
 
-.reasons-list li:nth-child(1),
-.reasons-list li:nth-child(2) {
-  display: flex;
-  flex-wrap: wrap;
-
-}
-
- .reasons-list .number-one {
+.reasons-list .city {
   width: 280px;
   padding-top: 47px;
   padding-right: 60px;
@@ -220,53 +212,39 @@ a {
   margin-right: 0;
 }
 
-.number-one h2,
-.number-two h2,
-.number-three h2,
-.number-four h2,
-.number-five h2,
-.features-item-one h3,
-.features-item-two h3,
-.features-item-three h3 {
+.reasons-list .total {
   padding-bottom: 24px;
 }
 
-.number-one p,
-.number-two p,
-.number-three p,
-.number-four p,
-.number-five p {
+.reasons-list .general {
   padding-top: 21px;
 }
 
-.features .features-item-one {
+.features .features-item-house {
   width: 252px;
   padding-top: 161px;
-  /* после вставки картинки padding-top уменьшится */
   padding-right: 75px;
   padding-bottom: 82px;
   padding-left: 73px;
 }
 
-.features .features-item-two {
+.features .features-item-food {
   width: 285px;
   padding-top: 161px;
-  /* после вставки картинки padding-top уменьшится */
   padding-right: 57px;
   padding-bottom: 82px;
   padding-left: 58px;
 }
 
-.features .features-item-three {
+.features .features-item-gift {
   width: 273px;
   padding-top: 161px;
-  /* после вставки картинки padding-top уменьшится */
   padding-right: 63px;
   padding-bottom: 82px;
   padding-left: 64px;
 }
 
-.reasons-list .number-two {
+.reasons-list .bridge {
   width: 303px;
   padding-top: 46px;
   padding-right: 48px;
@@ -275,7 +253,7 @@ a {
   margin-right: 0;
 }
 
-.reasons-list .number-three {
+.reasons-list .square {
   width: 208px;
   padding-top: 47px;
   padding-right: 97px;
@@ -284,7 +262,7 @@ a {
   margin-right: 0;
 }
 
-.reasons-list .number-four {
+.reasons-list .road {
   width: 262px;
   padding-top: 47px;
   padding-right: 69px;
@@ -293,7 +271,7 @@ a {
   margin-right: 0;
 }
 
-.reasons-list .number-five {
+.reasons-list .visitor {
   width: 247px;
   padding-top: 47px;
   padding-right: 76px;
@@ -303,7 +281,6 @@ a {
 }
 
 .search {
-  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -339,8 +316,11 @@ a {
   text-align: center;
 }
 
-.button-popup {
+.search-container {
   position: relative;
+}
+
+.button-popup {
   width: 568px;
   padding-top: 30px;
   padding-bottom: 30px;
@@ -414,6 +394,7 @@ a {
 
 .search-for-hotels {
   position: absolute;
+  top: 100%;
   left: 316px;
   width: 568px;
   margin-top: 0;
