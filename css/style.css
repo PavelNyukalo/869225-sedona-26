@@ -149,18 +149,6 @@ a {
   text-align: center;
 }
 
-.reasons-list .total {
-  padding: 0;
-  margin: 0;
-
-  font-size: 21px;
-  font-weight: bold;
-}
-
-.total-black {
-  color: #000000;
-}
-
 .features {
   display: flex;
   padding: 0;
@@ -177,8 +165,24 @@ a {
   margin: 0;
 }
 
-.reasons-list li:nth-child(1),
-.reasons-list li:nth-child(2) {
+.reasons-list .title-item {
+  padding: 0;
+  padding-bottom: 24px;
+  margin: 0;
+
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.title-item-black {
+  color: #000000;
+}
+
+.reasons-list .reason-description {
+  padding-top: 21px;
+}
+
+.reasons-list .reason-item-picture {
   display: flex;
   flex-wrap: wrap;
 
@@ -187,15 +191,13 @@ a {
   background-color: #81b3d2;
 }
 
-.reasons-list li:nth-child(3),
-.reasons-list li:nth-child(4),
-.reasons-list li:nth-child(5) {
+.reasons-list .reason-item-grey {
   background-color: #eeeeee;
 }
 
-.features li:nth-of-type(1),
-.features li:nth-of-type(2),
-.features li:nth-of-type(3) {
+.features .features-item-house,
+.features .features-item-food,
+.features .features-item-gift {
   text-align: center;
   color: #333333;
 
@@ -203,7 +205,7 @@ a {
   background-color: #ffffff;
 }
 
-.reasons-list .city {
+.reasons-list .reason-text {
   width: 280px;
   padding-top: 47px;
   padding-right: 60px;
@@ -212,72 +214,52 @@ a {
   margin-right: 0;
 }
 
-.reasons-list .total {
-  padding-bottom: 24px;
+.reasons-list .reason-two {
+  width: 303px;
+  padding-top: 46px;
+  padding-right: 48px;
+  padding-left: 49px;
 }
 
-.reasons-list .general {
-  padding-top: 21px;
+.reasons-list .reason-three {
+  width: 208px;
+  padding-right: 97px;
+  padding-left: 95px;
+}
+
+.reasons-list .reason-four {
+  width: 262px;
+  padding-right: 69px;
+  padding-left: 69px;
+}
+
+.reasons-list .reason-five {
+  width: 247px;
+  padding-right: 76px;
+  padding-left: 77px;
+}
+
+.features .features-item {
+  padding-top: 161px;
+  padding-bottom: 82px;
 }
 
 .features .features-item-house {
   width: 252px;
-  padding-top: 161px;
   padding-right: 75px;
-  padding-bottom: 82px;
   padding-left: 73px;
 }
 
 .features .features-item-food {
   width: 285px;
-  padding-top: 161px;
   padding-right: 57px;
-  padding-bottom: 82px;
   padding-left: 58px;
 }
 
 .features .features-item-gift {
   width: 273px;
-  padding-top: 161px;
   padding-right: 63px;
-  padding-bottom: 82px;
   padding-left: 64px;
-}
-
-.reasons-list .bridge {
-  width: 303px;
-  padding-top: 46px;
-  padding-right: 48px;
-  padding-bottom: 59px;
-  padding-left: 49px;
-  margin-right: 0;
-}
-
-.reasons-list .square {
-  width: 208px;
-  padding-top: 47px;
-  padding-right: 97px;
-  padding-bottom: 59px;
-  padding-left: 95px;
-  margin-right: 0;
-}
-
-.reasons-list .road {
-  width: 262px;
-  padding-top: 47px;
-  padding-right: 69px;
-  padding-bottom: 59px;
-  padding-left: 69px;
-  margin-right: 0;
-}
-
-.reasons-list .visitor {
-  width: 247px;
-  padding-top: 47px;
-  padding-right: 76px;
-  padding-bottom: 59px;
-  padding-left: 77px;
-  margin-right: 0;
 }
 
 .search {
