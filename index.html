@@ -14,17 +14,15 @@
 
       <header class="main-header">
         <nav class="main-navigation">
+          <a class="main-header-logo">
+            <img src="img/logo-sedona.svg" width="140" height="72" alt="CityOfSedona">
+          </a>
           <ul class="site-navigation">
             <li>
               <a href="#">Информация</a>
             </li>
             <li>
               <a href="#">Фото и видео</a>
-            </li>
-            <li class="main-header-logo">
-              <a>
-                <img src="img/logo-sedona.svg" width="140" height="72" alt="CityOfSedona">
-              </a>
             </li>
             <li>
               <a href="#">Карта штата</a>
@@ -145,15 +143,19 @@
                   </p>
                   <p class="adults">
                     <label for="number-of-adults">Взрослые:</label>
-                    <button class="signs minus" type="button" aria-label="Убавить"></button>
+                    <button class="signs press" type="button" aria-label="Убавить">
+                    </button>
                     <input id="number-of-adults" type="text" name="numAdults" value="2" placeholder="2" min="1" step="1">
-                    <button class="signs plus" type="button" aria-label="Добавить"></button>
+                    <button class="signs press-sup" type="button" aria-label="Добавить">
+                    </button>
                   </p>
                   <p class="children">
                     <label for="number-of-children">Дети:</label>
-                    <button class="signs minus" type="button" aria-label="Убавить"></button>
+                    <button class="signs press" type="button" aria-label="Убавить">
+                    </button>
                     <input id="number-of-children" type="text" name="numChildren" value="0" placeholder="0" min="0" step="1">
-                    <button class="signs plus" type="button" aria-label="Добавить"></button>
+                    <button class="signs press-sup" type="button" aria-label="Добавить">
+                    </button>
                   </p>
                   <button class="button button-post" type="submit">Найти</button>
                 </form>
