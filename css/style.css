@@ -108,11 +108,12 @@ a {
   opacity: 0.3;
 }
 
-.main-header-logo img {
+.main-header-logo {
   position: absolute;
-  top: -1px;
-  left: 722px;
+  top: 0;
+  left: 50%;
 
+  transform: translateX(-50%);
   z-index: 1;
 }
 
@@ -910,16 +911,16 @@ a {
   padding-top: 25px;
 }
 
-.advacned-settings .check-option {
+.advacned-settings .checkbox {
   position: relative;
   padding-left: 39px;
 }
 
-.housing .check-option {
+.housing .checkbox {
   padding-left: 42px;
 }
 
-.advacned-settings .check-box {
+.advacned-settings .checkbox-icon {
   position: absolute;
   top: -2px;
   left: 0;
@@ -932,13 +933,7 @@ a {
   background-position: 0 0;
 }
 
-.option-apartments,
-.option-wifi {
-  padding-top: 1px;
-  /* Для пиксель-перфект */
-}
-
-.check-input:checked + .check-box {
+.check-input:checked + .checkbox-icon {
   position: absolute;
   top: -2px;
   left: 0;
@@ -951,27 +946,27 @@ a {
   background-position: 0 0;
 }
 
-.check-input:hover + .check-box,
-.check-input:focus + .check-box {
-  opacity: 0.5;
+.checkbox:hover,
+.checkbox:focus {
+  cursor: pointer;
 }
 
-.check-input:focus + .check-box {
+.check-input:focus + .checkbox-icon {
   outline: 2px solid #81b3d2;
 }
 
-.check-input:active + .check-box {
+.checkbox:active {
   opacity: 0.2;
 }
 
-.check-input:disabled + .check-box {
+.check-input:disabled + .checkbox-icon {
   background-image: url("../img/checkbox-off-disabled.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   opacity: 1;
 }
 
-.check-input:disabled:checked + .check-box {
+.check-input:disabled:checked + .checkbox-icon {
   background-image: url("../img/checkbox-on-disabled.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -1175,7 +1170,7 @@ a {
 
 .button-sort-current {
   margin: 0;
-  padding-left: 40px;
+  margin-left: 40px;
 
   color: #81b3d2;
 
@@ -1353,24 +1348,18 @@ a {
   height: 17px;
 
   background-image: url("../img/star.svg");
-  background-repeat: no-repeat;
+  background-repeat: space;
   background-position: 0 0;
 }
 
 .hotels-items .stars-4 {
   width: 89px;
-
-  background-repeat: space;
 }
 
 .hotels-items .stars-3 {
   width: 64px;
-
-  background-repeat: space;
 }
 
 .hotels-items .stars-2 {
   width: 41px;
-
-  background-repeat: space;
 }
