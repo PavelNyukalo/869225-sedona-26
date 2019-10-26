@@ -212,6 +212,8 @@ a {
   display: flex;
   padding: 0;
   margin: 0;
+
+  background-color: #ffffff;
 }
 
 .reasons-list span {
@@ -423,6 +425,7 @@ a {
 }
 
 .button-popup {
+  position: relative;
   width: 568px;
   padding-top: 30px;
   padding-bottom: 30px;
@@ -432,6 +435,8 @@ a {
   margin-left: 316px;
 
   background-color: #766357;
+
+  z-index: 2;
 }
 
 .button {
@@ -503,6 +508,10 @@ a {
   background-color: #ffffff;
   -webkit-box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
           box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
+
+  animation-name: form-show;
+  animation-duration: 0.6s;
+  animation-fill-mode: forwards;
 }
 
 .form-search-for-hotels {
@@ -536,11 +545,13 @@ a {
 }
 
 .arrival {
+  position: relative;
   margin-top: 0;
   margin-bottom: 29px;
 }
 
 .departure {
+  position: relative;
   margin-bottom: 30px;
 }
 
@@ -556,6 +567,7 @@ a {
 .departure input {
   position: relative;
   width: 334px;
+  height: 26px;
   padding-top: 6px;
   padding-right: 0;
   padding-bottom: 6px;
@@ -579,16 +591,14 @@ a {
 .arrival .calendar,
 .departure .calendar {
   position: absolute;
-  top: 63px;
-  right: 64px;
+  top: 50%;
+  right: 9px;
   padding: 0;
 
   background-color: transparent;
   border: none;
-}
 
-.departure .calendar {
-  top: 130px;
+  transform: translateY(-44%);
 }
 
 .calendar:hover path,
@@ -725,7 +735,10 @@ a {
 }
 
 .maps {
+  position: relative;
   height: 593px;
+
+  z-index: -2;
 }
 
 .main-footer {
@@ -999,10 +1012,6 @@ a {
   cursor: pointer;
 }
 
-.check-input:focus + .checkbox-icon {
-  outline: 2px solid #81b3d2;
-}
-
 .checkbox:active {
   opacity: 0.2;
 }
@@ -1121,7 +1130,7 @@ a {
   width: 4px;
   height: 4px;
 
-  background: #ababab;
+  background-color: #ababab;
   border: 8px solid #ffffff;
   border-radius: 50%;
   -webkit-box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
@@ -1146,6 +1155,8 @@ a {
 
 .filter-range .range-toggle:hover,
 .filter-range .range-toggle:focus {
+  background-color: #1b0342;
+
   -webkit-transform: scale(1.2);
       -ms-transform: scale(1.2);
           transform: scale(1.2);
@@ -1427,4 +1438,68 @@ a {
 
 .hotels-items .stars-2 {
   width: 41px;
+}
+
+/* Анимация */
+
+@keyframes form-show {
+
+  0% {
+    top: -370%;
+    z-index: -1;
+  }
+
+  70% {
+    z-index: -1;
+  }
+
+  100% {
+    top: 100%;
+    z-index: 1;
+  }
+}
+
+@keyframes form-close {
+
+  0% {
+    top: 100%;
+  }
+
+  100% {
+    top: -370%;
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateY(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateY(-5px);
+  }
+}
+
+.error {
+  animation-name: shake;
+  animation-duration: 0.6s;
+}
+
+.invisible {
+  animation-name: form-close;
+  animation-duration: 0.6s;
+  animation-fill-mode: forwards;
+  z-index: -1;
 }
