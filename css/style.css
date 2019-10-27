@@ -512,19 +512,23 @@ a {
   margin-right: auto;
   margin-bottom: 0;
   margin-left: auto;
-  z-index: 1;
 
   background-color: #ffffff;
   -webkit-box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
           box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
 
-  -webkit-animation-name: form-show;
+  z-index: -1;
+  -webkit-transition: -webkit-transform 0.6s linear;
+  transition: -webkit-transform 0.6s linear;
+  -o-transition: transform 0.6s linear;
+  transition: transform 0.6s linear;
+  transition: transform 0.6s linear, -webkit-transform 0.6s linear;
+}
 
-          animation-name: form-show;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+.invisible {
+  -webkit-transform: translateY(-100%);
+      -ms-transform: translateY(-100%);
+          transform: translateY(-100%);
 }
 
 .form-search-for-hotels {
@@ -1190,9 +1194,9 @@ a {
 .filter-range .range-toggle:focus {
   background-color: #1b0342;
 
-  -webkit-transform: scale(1.2);
-      -ms-transform: scale(1.2);
-          transform: scale(1.2);
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .button-show {
@@ -1262,9 +1266,8 @@ a {
 
   font-size: 12px;
   line-height: 18px;
-  color: #000000;
+  color: rgba(0, 0, 0, 0.3);
 
-  opacity: 0.3;
   border-bottom: 1px dotted #81b3d2;
 }
 
@@ -1274,7 +1277,6 @@ a {
 
   color: #81b3d2;
 
-  opacity: 1;
   border: none;
 }
 
@@ -1286,7 +1288,6 @@ a {
 .button-sort:active {
   color: #000000;
 
-  opacity: 1;
   border: none;
 }
 
@@ -1475,44 +1476,6 @@ a {
 
 /* Анимация */
 
-@-webkit-keyframes form-show {
-
-  0% {
-    -webkit-transform: translateY(-100%);
-            transform: translateY(-100%);
-    z-index: -1;
-  }
-
-  70% {
-    z-index: -1;
-  }
-
-  100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-    z-index: 1;
-  }
-}
-
-@keyframes form-show {
-
-  0% {
-    -webkit-transform: translateY(-100%);
-            transform: translateY(-100%);
-    z-index: -1;
-  }
-
-  70% {
-    z-index: -1;
-  }
-
-  100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-    z-index: 1;
-  }
-}
-
 @-webkit-keyframes shake {
   0%,
   100% {
@@ -1570,6 +1533,3 @@ a {
           animation-duration: 0.6s;
 }
 
-.invisible {
-  display: none;
-}

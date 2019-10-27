@@ -2,6 +2,8 @@
 var link = document.querySelector(".button-popup");
 var popup = document.querySelector(".search-for-hotels");
 
+popup.classList.add("invisible");
+
 // Проверка формы
 var form = popup.querySelector("form");
 var arival = popup.querySelector("[name=dateArrival]");
