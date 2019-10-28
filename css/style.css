@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 0;
 
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: normal;
@@ -839,10 +839,6 @@ a {
   margin-left: 84px;
 }
 
-.social-button li:nth-child(3) {
-  margin-right: 0;
-}
-
 .social-button-twitter,
 .social-button-facebook,
 .social-button-youtube {
@@ -1048,9 +1044,13 @@ a {
   background-position: 0 0;
 }
 
-.checkbox:hover,
-.checkbox:focus {
+.checkbox:hover {
   cursor: pointer;
+}
+
+.checkbox-icon:focus {
+  cursor: pointer;
+  outline: 2px solid #ffffff;
 }
 
 .check-input:disabled + .checkbox-icon {
