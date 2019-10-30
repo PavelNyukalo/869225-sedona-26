@@ -1048,9 +1048,9 @@ a {
   cursor: pointer;
 }
 
-.checkbox-icon:focus {
+.check-input:focus + .checkbox-icon {
   cursor: pointer;
-  outline: 2px solid #ffffff;
+  outline: 2px solid #A6C7FF;
 }
 
 .check-input:disabled + .checkbox-icon {
@@ -1157,7 +1157,6 @@ a {
 
   background-color: #ffffff;
 }
-
 
 .filter-range .range-toggle {
   position: absolute;
@@ -1532,4 +1531,3 @@ a {
   -webkit-animation-duration: 0.6s;
           animation-duration: 0.6s;
 }
-
