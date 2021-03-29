@@ -3,14 +3,14 @@
 * Студент: [Павел Нюкало](https://up.htmlacademy.ru/htmlcss/26/user/869225).
 * Наставник: [Дмитрий Иовлев](https://htmlacademy.ru/profile/skywalker).
 
-# О проекте
+## О проекте
 Сайт туристического городка в штате Аризона
 
 Браузерная поддержка - Google Chrome, Mozilla Firefox, IE 11
 
 [Ссылка на проект](https://pavelnyukalo.github.io/sedona/)
 
-# Используемые технологии
+## Используемые технологии
 * HTML
 * CSS
 * JavaScript
@@ -20,7 +20,7 @@
 Подключена интерактивная карта Google Maps.  
 Все интерактивные элементы сайта доступны с клавиатуры.
 
-# Обучение
+## Обучение
 
 Репозиторий создан для обучения на интенсивном онлайн‑курсе «[Профессиональный HTML и CSS](https://htmlacademy.ru/intensive/htmlcss)», уровень 1 от [HTML Academy](https://htmlacademy.ru).
 
