@@ -8,7 +8,7 @@
 
 Браузерная поддержка - Google Chrome, Mozilla Firefox, IE 11
 
-[Ссылка на проект](https://pavel-nyukalo.github.io/sedona/)
+[Ссылка на проект](https://pavel-niukalo.github.io/sedona/)
 
 ## Используемые технологии
 * HTML
